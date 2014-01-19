@@ -1,0 +1,78 @@
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\WingtipToys.dll.config
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\WingtipToys.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\WingtipToys.pdb
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Antlr3.Runtime.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\AspNet.ScriptManager.bootstrap.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Elmah.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\EntityFramework.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\EntityFramework.SqlServer.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Google.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.ScriptManager.MSAjax.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Web.Infrastructure.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Newtonsoft.Json.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Owin.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\System.Web.Optimization.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\System.Web.Providers.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\WebGrease.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\System.Web.Optimization.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Antlr3.Runtime.pdb
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Newtonsoft.Json.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\EntityFramework.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\EntityFramework.SqlServer.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Google.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\obj\Debug\WingtipToys.csprojResolveAssemblyReference.cache
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\obj\Debug\WingtipToys.dll
+c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\obj\Debug\WingtipToys.pdb
+D:\workshop\GitRepo\Projects\WingtipToys\bin\WingtipToys.dll.config
+D:\workshop\GitRepo\Projects\WingtipToys\bin\WingtipToys.dll
+D:\workshop\GitRepo\Projects\WingtipToys\bin\WingtipToys.pdb
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Web.Infrastructure.dll
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Web.Infrastructure.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\System.Web.Optimization.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Antlr3.Runtime.pdb
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Newtonsoft.Json.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\EntityFramework.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\EntityFramework.SqlServer.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.AspNet.Identity.Core.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Security.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Security.Facebook.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Security.Cookies.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Security.Google.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Security.Twitter.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Owin.Security.OAuth.xml
+D:\workshop\GitRepo\Projects\WingtipToys\obj\Debug\WingtipToys.csprojResolveAssemblyReference.cache
+D:\workshop\GitRepo\Projects\WingtipToys\obj\Debug\WingtipToys.dll
+D:\workshop\GitRepo\Projects\WingtipToys\obj\Debug\WingtipToys.pdb
