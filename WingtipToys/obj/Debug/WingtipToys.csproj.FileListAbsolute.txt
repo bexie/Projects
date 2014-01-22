@@ -50,7 +50,6 @@ c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\Wingtip
 c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\obj\Debug\WingtipToys.csprojResolveAssemblyReference.cache
 c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\obj\Debug\WingtipToys.dll
 c:\users\bin\documents\visual studio 2013\Projects\Getting Started with1\WingtipToys\obj\Debug\WingtipToys.pdb
-D:\workshop\GitRepo\Projects\WingtipToys\bin\WingtipToys.dll.config
 D:\workshop\GitRepo\Projects\WingtipToys\bin\WingtipToys.dll
 D:\workshop\GitRepo\Projects\WingtipToys\bin\WingtipToys.pdb
 D:\workshop\GitRepo\Projects\WingtipToys\bin\Microsoft.Web.Infrastructure.dll
