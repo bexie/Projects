@@ -48,3 +48,308 @@ Exception Type: System.Web.HttpException
 Exception: An HTTP error occurred. Page Not found. Please try again.
 Source: customErrors section - Web.config
 Stack Trace: 
+********** 2014/1/23 16:45:36 **********
+Inner Exception Type: System.Data.SqlClient.SqlException
+Inner Exception: Could not delete file 'D:\workshop\GitRepo\Projects\WingtipToys\App_Data\wingtiptoys.mdf'. See the SQL Server error log for more information.
+Inner Source: .Net SqlClient Data Provider
+Inner Stack Trace: 
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass2b.<DropDatabase>b__29(DbConnection conn)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.DropDatabase(SqlConnection sqlConnection, Nullable`1 commandTimeout, String databaseName)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.DbDeleteDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Common.DbProviderServices.DeleteDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Objects.ObjectContext.DeleteDatabase()
+   在 System.Data.Entity.Internal.DatabaseOperations.DeleteIfExists(ObjectContext objectContext)
+   在 System.Data.Entity.Database.Delete()
+   在 System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClasse`1.<CreateInitializationAction>b__d()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 WingtipToys.Logic.ShoppingCartActions.GetCount() 位置 d:\workshop\GitRepo\Projects\WingtipToys\Logic\ShoppingCartActions.cs:行号 200
+   在 WingtipToys.SiteMaster.Page_PreRender(Object sender, EventArgs e) 位置 d:\workshop\GitRepo\Projects\WingtipToys\Site.Master.cs:行号 84
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnPreRender(EventArgs e)
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: 引发类型为“System.Web.HttpUnhandledException”的异常。
+Source: Application_Error - Global.asax
+Stack Trace: 
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Users\bin\AppData\Local\Temp\Temporary ASP.NET Files\root\77f63330\cc0a649e\App_Web_g1kygbwh.2.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 2014/1/23 16:49:26 **********
+Inner Exception Type: System.Data.SqlClient.SqlException
+Inner Exception: Cannot create file 'D:\workshop\GitRepo\Projects\WingtipToys\App_Data\wingtiptoys.mdf' because it already exists. Change the file path or the file name, and retry the operation.
+CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
+Inner Source: .Net SqlClient Data Provider
+Inner Stack Trace: 
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass18.<CreateDatabaseFromScript>b__17(DbConnection conn)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   在 System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   在 System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   在 System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   在 System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   在 System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext)
+   在 System.Data.Entity.Database.Create(Boolean skipExistsCheck)
+   在 System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClasse`1.<CreateInitializationAction>b__d()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 WingtipToys.Logic.ShoppingCartActions.GetCount() 位置 d:\workshop\GitRepo\Projects\WingtipToys\Logic\ShoppingCartActions.cs:行号 200
+   在 WingtipToys.SiteMaster.Page_PreRender(Object sender, EventArgs e) 位置 d:\workshop\GitRepo\Projects\WingtipToys\Site.Master.cs:行号 84
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnPreRender(EventArgs e)
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: 引发类型为“System.Web.HttpUnhandledException”的异常。
+Source: Application_Error - Global.asax
+Stack Trace: 
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Users\bin\AppData\Local\Temp\Temporary ASP.NET Files\root\77f63330\cc0a649e\App_Web_sg5nhmec.7.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 2014/1/23 16:57:19 **********
+Inner Exception Type: System.Data.SqlClient.SqlException
+Inner Exception: Cannot create file 'D:\workshop\GitRepo\Projects\WingtipToys\App_Data\wingtiptoys.mdf' because it already exists. Change the file path or the file name, and retry the operation.
+CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
+Inner Source: .Net SqlClient Data Provider
+Inner Stack Trace: 
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass18.<CreateDatabaseFromScript>b__17(DbConnection conn)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   在 System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   在 System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   在 System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   在 System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   在 System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext)
+   在 System.Data.Entity.Database.Create(Boolean skipExistsCheck)
+   在 System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClasse`1.<CreateInitializationAction>b__d()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 WingtipToys.Logic.ShoppingCartActions.GetCount() 位置 d:\workshop\GitRepo\Projects\WingtipToys\Logic\ShoppingCartActions.cs:行号 200
+   在 WingtipToys.SiteMaster.Page_PreRender(Object sender, EventArgs e) 位置 d:\workshop\GitRepo\Projects\WingtipToys\Site.Master.cs:行号 84
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnPreRender(EventArgs e)
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: 引发类型为“System.Web.HttpUnhandledException”的异常。
+Source: Application_Error - Global.asax
+Stack Trace: 
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Users\bin\AppData\Local\Temp\Temporary ASP.NET Files\root\77f63330\cc0a649e\App_Web_1ir2loth.5.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 2014/1/23 16:58:23 **********
+Inner Exception Type: System.Data.SqlClient.SqlException
+Inner Exception: Cannot create file 'D:\workshop\GitRepo\Projects\WingtipToys\App_Data\wingtiptoys.mdf' because it already exists. Change the file path or the file name, and retry the operation.
+CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
+Inner Source: .Net SqlClient Data Provider
+Inner Stack Trace: 
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass18.<CreateDatabaseFromScript>b__17(DbConnection conn)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   在 System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   在 System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   在 System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   在 System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   在 System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext)
+   在 System.Data.Entity.Database.Create(Boolean skipExistsCheck)
+   在 System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClasse`1.<CreateInitializationAction>b__d()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 WingtipToys.Logic.ShoppingCartActions.GetCount() 位置 d:\workshop\GitRepo\Projects\WingtipToys\Logic\ShoppingCartActions.cs:行号 200
+   在 WingtipToys.SiteMaster.Page_PreRender(Object sender, EventArgs e) 位置 d:\workshop\GitRepo\Projects\WingtipToys\Site.Master.cs:行号 84
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnPreRender(EventArgs e)
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: 引发类型为“System.Web.HttpUnhandledException”的异常。
+Source: Application_Error - Global.asax
+Stack Trace: 
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Users\bin\AppData\Local\Temp\Temporary ASP.NET Files\root\77f63330\cc0a649e\App_Web_uryvpzud.1.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 2014/1/23 16:59:35 **********
+Inner Exception Type: System.Data.SqlClient.SqlException
+Inner Exception: Cannot create file 'D:\workshop\GitRepo\Projects\WingtipToys\App_Data\wingtiptoys.mdf' because it already exists. Change the file path or the file name, and retry the operation.
+CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
+Inner Source: .Net SqlClient Data Provider
+Inner Stack Trace: 
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass18.<CreateDatabaseFromScript>b__17(DbConnection conn)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   在 System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   在 System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   在 System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   在 System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   在 System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   在 System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   在 System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext)
+   在 System.Data.Entity.Database.Create(Boolean skipExistsCheck)
+   在 System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClasse`1.<CreateInitializationAction>b__d()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 WingtipToys.Logic.ShoppingCartActions.GetCount() 位置 d:\workshop\GitRepo\Projects\WingtipToys\Logic\ShoppingCartActions.cs:行号 200
+   在 WingtipToys.SiteMaster.Page_PreRender(Object sender, EventArgs e) 位置 d:\workshop\GitRepo\Projects\WingtipToys\Site.Master.cs:行号 84
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnPreRender(EventArgs e)
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: 引发类型为“System.Web.HttpUnhandledException”的异常。
+Source: Application_Error - Global.asax
+Stack Trace: 
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Users\bin\AppData\Local\Temp\Temporary ASP.NET Files\root\77f63330\cc0a649e\App_Web_d4gcutgh.5.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
