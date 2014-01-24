@@ -21,7 +21,7 @@
 		OutputAssembly="ConsoleApplication1.exe"
 		EmitDebugInformation="$(Debug)" />
 
-	<Exec Command="echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)>msbuildvariables.txt"></Exec>
+	<Exec Command="Bell: echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)>msbuildvariables.txt"></Exec>
 
 </Target>
 
