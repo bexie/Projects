@@ -1,28 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
-<PropertyGroup>
-	<Debug Condition="'$(Delete)'==''">true</Debug>
-	<Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
-	<Platform Condition="'$(Platform)'==''">"Any CPU"</Platform>
-</PropertyGroup>
-
-<ItemGroup>
-	<CompileFiles Include="Program.cs" />
-	<deleteFiles Include="ConsoleApplication1.exe;ConsoleApplication1.pdb" />
-</ItemGroup>
-
-<Target Name="Clean">
-	<Delete Files="@(DeleteFiles)" />
-</Target>
-
-<Target Name="Build" DependsOnTargets="Clean">
-	<Csc Sources="@(CompileFiles)"
-		OutputAssembly="ConsoleApplication1.exe"
-		EmitDebugInformation="$(Debug)" />
-
-	<Exec Command="Bell: echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)>msbuildvariables.txt"></Exec>
-
-</Target>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Debug Condition="'$(Delete)'==''">true</Debug>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <Platform Condition="'$(Platform)'==''">"Any CPU"</Platform>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ProjectGuid>{69E9C9C7-9455-4FC6-AB8F-ADBDCE4820CF}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <CompileFiles Include="Program.cs" />
+    <deleteFiles Include="ConsoleApplication1.exe;ConsoleApplication1.pdb" />
+  </ItemGroup>
+  <Target Name="Clean">
+    <Delete Files="@(DeleteFiles)" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="Clean">
+    <Csc Sources="@(CompileFiles)" OutputAssembly="ConsoleApplication1.exe" EmitDebugInformation="$(Debug)" />
+    <Exec Command="echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)&gt;msbuildvariables.txt">
+    </Exec>
+  </Target>
 </Project>

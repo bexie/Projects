@@ -10,7 +10,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            System.Console.Write("Hello MSBuild");
+            System.Console.Write("Hello MSBuild2");
         }
     }
 }
