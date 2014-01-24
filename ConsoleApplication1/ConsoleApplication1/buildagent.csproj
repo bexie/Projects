@@ -3,6 +3,8 @@
 
 <PropertyGroup>
 	<Debug Condition="'$(Delete)'==''">true</Debug>
+	<Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+	<Platform Condition="'$(Platform)'==''">"Any CPU"</Platform>
 </PropertyGroup>
 
 <ItemGroup>
@@ -18,6 +20,9 @@
 	<Csc Sources="@(CompileFiles)"
 		OutputAssembly="ConsoleApplication1.exe"
 		EmitDebugInformation="$(Debug)" />
+
+	<Exec Command="echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)>msbuildvariables.txt"></Exec>
+
 </Target>
 
 </Project>
