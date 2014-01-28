@@ -11,7 +11,7 @@
     <OldToolsVersion>2.0</OldToolsVersion>
     <ProjectGuid>{69E9C9C7-9455-4FC6-AB8F-ADBDCE4820CF}</ProjectGuid>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
