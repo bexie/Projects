@@ -477,7 +477,7 @@
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
-    <Exec Command="echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)&gt;msbuildvariables.txt">
+    <Exec Command="echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)>msbuildvariables.txt">
     </Exec>
   </Target>
   <Target Name="AfterBuild">
