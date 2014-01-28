@@ -479,6 +479,8 @@
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
+    <Exec Command="echo Variables used to in build script: Configuration=$(Configuration) Platform=$(Platform)&gt;msbuildvariables.txt">
+    </Exec>
   </Target>
   -->
 </Project>
